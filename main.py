@@ -1,4 +1,4 @@
-from veterinaria import Veterinaria # Se importa la clase Veterinaria para poder gestionar la veterinaria
+from veterinaria import Veterinaria # Se importa la clase Veterinaria para poder gestionar los clientes, mascotas y citas
 from cliente import Cliente # Se importa la clase Cliente para poder gestionar los clientes
 from mascota import Mascota # Se importa la clase Mascota para poder gestionar las mascotas 
 from cita import CitaFactory # Se importa la clase CitaFactory para poder gestionar las citas
