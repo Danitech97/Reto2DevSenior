@@ -29,8 +29,10 @@ class Veterinaria:
 # Se agrega una cita a la lista de citas y se imprime un mensaje de confirmacion
     def agregar_cita(self, cita):
         self.citas.append(cita)
+        cita.mascota.historial.agregar_servicio(
+        f"{cita.fecha} - {cita.servicio}")
         print(f"Cita para {cita.mascota.nombre} registrada con éxito.")
-
+        
 # Permite cancelar una cita específica buscando por fecha y nombre de la mascota.
     def cancelar_cita(self, fecha, nombre_mascota): # Y si la cita es encontrada, la elimina de la lista de citas 
         cita_a_cancelar = None

@@ -1,3 +1,4 @@
+
 from veterinaria import Veterinaria # Se importa la clase Veterinaria para poder gestionar los clientes, mascotas y citas
 from cliente import Cliente # Se importa la clase Cliente para poder gestionar los clientes
 from mascota import Mascota # Se importa la clase Mascota para poder gestionar las mascotas 
@@ -8,7 +9,6 @@ from cita import CitaFactory # Se importa la clase CitaFactory para poder gestio
 # Menú interactivo poder validar las opciones de la veterinaria
 def menu():
     veterinaria = Veterinaria()
-    archivo_datos = "veterinaria_data.json"
 
     while True:
         print("\n----- BIENVENIDA A LA VETERINARIA HUELLA FELIZ -----")
